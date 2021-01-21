@@ -26,9 +26,9 @@ def baiduOCR(picfile):
     picfile:    图片文件名
     """
 
-    APP_ID = '填你自己注册应用的APP_ID'  # 刚才获取的ID，下同
-    API_KEY = '填你自己注册应用的API_KEY'
-    SECRECT_KEY = '填你自己注册应用的SECRECT_KEY'
+    APP_ID = '23573025'  # 刚才获取的ID，下同
+    API_KEY = '3xQEn87DGB7qNLzXsQusWu4l'
+    SECRECT_KEY = 'QcMVcuTDjW8Wa076wznjIGbf7tbq931h'
     client = AipOcr(APP_ID, API_KEY, SECRECT_KEY)
     i = open(picfile, 'rb')
     img = i.read()
@@ -50,7 +50,7 @@ def baiduOCR(picfile):
         # print('此图片类型无法识别')
 
 
-pic_path = r'/Users/brucepk/Pictures/banfo/'   # 目标路径，需要改成你自己需要改名称的路径，最后最后的/不要漏了
+pic_path = r'/C:/Users/linctex/Desktop/1.21/高士博/'   # 目标路径，需要改成你自己需要改名称的路径，最后最后的/不要漏了
 
 """os.listdir(path) 操作效果为 返回指定路径(path)文件夹中所有文件名"""
 
